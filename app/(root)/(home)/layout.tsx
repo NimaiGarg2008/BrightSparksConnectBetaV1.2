@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Bright Sparks Connect",
   description: "Created by Bright Sparks Academy for all students and teachers to connect and collaborate.",
   icons: {
-    icon: '/icons/logo.svg',
+    icon: '/icons/logo.png',
   }
 };
 

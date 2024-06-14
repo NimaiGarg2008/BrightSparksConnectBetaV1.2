@@ -11,17 +11,31 @@ const Navbar = () => {
       <Link href="/" className="flex items-center gap-1">
         <Image
           src="icons/logo.svg"
-          width={32}
-          height={32}
+          width={60} 
+          height={60}
           alt="Bright Sparks Academy"
           className='max-sm:size-10'
         />
-        <p className="text-[26px] font-extrabold text-white max-sm:hidden">Bright Sparks</p>
+        <p className="text-[24px] font-bold text-black max-sm:hidden">Bright Sparks Connect</p>
       </Link>
 
-      <div className="flex-between gap-5">
+      <div className="flex-between gap-5 text-black">
         <SignedIn>
-          <UserButton/>
+          <UserButton
+            appearance={{
+              variables: {
+                colorText: '#000',
+                colorPrimary: '#000',
+                colorBackground: '#fff',
+                colorInputBackground: "#000",
+                colorInputText: '#000',
+                colorTextOnPrimaryBackground: "#000",
+                colorTextSecondary: "#000",
+                colorNeutral: "#000",
+
+              }
+            }}
+          />
         </SignedIn>
 
         <MobileNav />

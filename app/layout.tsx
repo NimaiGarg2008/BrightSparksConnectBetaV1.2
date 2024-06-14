@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Bright Sparks Connect",
   description: "Created by Bright Sparks Academy for all students and teachers to connect and collaborate.",
   icons: {
-    icon: '/icons/logo.svg',
+    icon: '/icons/logo.png',
   }
 };
 
@@ -27,17 +27,18 @@ export default function RootLayout({
       <ClerkProvider
         appearance={{
           layout: {
-            logoImageUrl: '/icons/yoom-logo.svg',
+            logoImageUrl: '/icons/logo.png',
             socialButtonsVariant: 'iconButton'
           },
           variables: {
-            colorText: '#fff',
-            colorPrimary: '#0E78F9',
-            colorBackground: '#1c1f2e',
-            colorInputBackground: "#252a41",
-            colorInputText: '#fff',
+            colorText: '#000',
+            colorPrimary: '#000',
+            colorBackground: '#fff',
+            colorInputBackground: "#fff",
+            colorInputText: '#000',
+            },
           }
-        }}
+        }
       >
         <body className={`${inter.className} bg-dark-2`}>
           {children}

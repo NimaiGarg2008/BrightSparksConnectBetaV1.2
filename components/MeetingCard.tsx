@@ -42,8 +42,8 @@ const MeetingCard = ({
         </div>
       </article>
       <article className={cn("flex justify-center relative", {})}>
-        <div className="relative flex w-full max-sm:hidden">
-          {avatarImages.map((img, index) => (
+        {/* <div className="relative flex w-full max-sm:hidden">
+          {/* {avatarImages.map((img, index) => (
             <Image
               key={index}
               src={img}
@@ -55,9 +55,9 @@ const MeetingCard = ({
             />
           ))}
           <div className="flex-center absolute left-[136px] size-10 rounded-full border-[5px] border-dark-3 bg-dark-4">
-            +5
+        
           </div>
-        </div>
+        </div> */}
         {!isPreviousMeeting && (
           <div className="flex gap-2">
             <Button onClick={handleClick} className="rounded bg-blue-1 px-6">
@@ -73,7 +73,7 @@ const MeetingCard = ({
                   title: "Link Copied",
                 });
               }}
-              className="bg-dark-4 px-6"
+              className="bg-dark-5 px-6"
             >
               <Image
                 src="/icons/copy.svg"

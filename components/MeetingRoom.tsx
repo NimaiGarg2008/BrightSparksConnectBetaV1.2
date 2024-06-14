@@ -64,7 +64,7 @@ const MeetingRoom = () => {
                     </DropdownMenuTrigger>
                 </div>
         
-                <DropdownMenuContent className="border-dark-1 bg-dark-1 text-white">
+                <DropdownMenuContent className="border-dark-1 bg-dark-5 text-black">
                     {['Grid', 'Speaker-Left', 'Speaker-Right'].map((item, index) => (
                        <div key={index}>
                             <DropdownMenuItem
@@ -78,6 +78,7 @@ const MeetingRoom = () => {
                         </div>
                      ))}
                 </DropdownMenuContent>
+                
             </DropdownMenu>
             <CallStatsButton />
             {/* <button onClick={() => setShowParticipants((prev) => !prev)}>

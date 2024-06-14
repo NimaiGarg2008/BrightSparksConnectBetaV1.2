@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
 
@@ -7,9 +7,9 @@
 @tailwind utilities;
 
 :root {
-  --font-sora: "Sora", sans-serif;
-  --font-code: "Source Code Pro", monospace;
-  --font-grotesk: "Space Grotesk", sans-serif;
+  --font-sora: "Quicksand", sans-serif;
+  --font-code: "Quicksand", monospace;
+  --font-grotesk: "Quicksand", sans-serif;
   color-scheme: dark;
 }
 
@@ -46,53 +46,32 @@ body {
 }
 
 /* ==== clerk class override ===== */
-.cl-button__apple {
-  filter: invert(1);
-}
-.cl-internal-180wb59,
-.cl-internal-11ttlho,
-.cl-internal-lqfubk {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
+
+.cl-userButtonPopoverActionButtonIcon {
+  color: black;
 }
 
 .cl-logoBox {
-  height: 75px;
+  height: 40px;
 }
-
 .cl-dividerLine {
-  background: #2cbfae;
+  background: #fff;
   height: 2px;
 }
 
 .cl-socialButtonsIconButton {
-  padding-block: 10px;
-  border: 3px solid #2cbfae;
+  border: 3px solid #565761;
 }
 
-.cl-socialButtonsIconButton img {
-  width: 24px;
-  height: 24px;
+.cl-internal-wkkub3 {
+  color: white;
 }
 
-.cl-avatarBox {
-  width: 40px;
-  height: 40px;
+.cl-userButtonPopoverActionButton {
+  color: black;
 }
 
-.cl-userButtonAvatarBox {
-  border: 3px solid #16a191;
-}
-
-.cl-footerActionLink {
-  color: #16a191;
-}
+/* =============================== */
 
 /* ======== stream css overrides ======== */
 .str-video__call-stats {
@@ -110,23 +89,23 @@ body {
 }
 
 .str-video__menu-container {
-  color: white;
+  color: #ffd900;
 }
 
 .str-video__notification {
-  color: white;
+  color: black;
 }
 
 .str-video__participant-list {
-  background-color: #1c1f2e;
+  background-color: #000;
   padding: 10px;
   border-radius: 10px;
-  color: white;
+  color: black;
   height: 100%;
 }
 
 .str-video__video-preview-container {
-  border-color: #16a191 !important;
+  border-color: #ffd900 !important;
 }
 
 /* .str-video__call-controls__button--variant-danger {
@@ -235,5 +214,26 @@ body {
 
   .flex-between {
     @apply flex justify-between items-center;
+  }
+}
+
+/* animation */
+
+.show-block {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  animation: show 0.7s forwards linear;
+}
+
+@keyframes show {
+  0% {
+    animation-timing-function: ease-in;
+    width: 0%;
+  }
+
+  100% {
+    animation-timing-function: ease-in;
+    width: 100%;
   }
 }

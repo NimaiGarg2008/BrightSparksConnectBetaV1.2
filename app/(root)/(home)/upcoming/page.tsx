@@ -3,7 +3,7 @@ import CallList from '@/components/CallList'
 
 const Upcoming = () => {
   return (
-    <section className="flex size-full flex-col gap-10 text-white">
+    <section className="flex size-full flex-col gap-10 text-black">
         <h1 className='text-3xl font-bold'>
             Upcoming
         </h1>
